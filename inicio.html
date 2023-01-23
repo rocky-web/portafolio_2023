@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Felipe Berroeta</title>
+</head>
+<body>
+    <div class="div1">
+        <ul>
+            <li><a href="#" onclick="load1()">Portafolio</a>
+            <li><a href="#" onclick="load2()">Sistema de registros de trabajadores (CRUD)</a></li>
+            <li><a href="#">Proyecto en ejecucion</a></li>
+        </ul>
+    </div>
+   
+    <div class="div2">
+        <div id="mostrar"></div>
+    </div>
+    
+
+    <script>
+        function load1(){
+            fetch("profile.html")
+            .then(res=>res.text())
+            .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+            })
+        }
+
+        function load2(){
+            fetch("crud.html")
+            .then(res=>res.text())
+            .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+            })
+        }
+    </script>
+</body>
+</html>

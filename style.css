@@ -1,0 +1,43 @@
+.mi_color{
+    color: red;
+}
+
+li>a{
+    font-family: 'calibri', 'verdana';
+    font-size: 19px;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(180, 11, 166);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(43, 223, 223);
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.div1{
+    display: inline-block;
+    background-color: rgb(253, 134, 134);
+    width: 20%;
+}
+
+.div2{
+    display: inline-block;
+    background-color: burlywood;
+    width: 60%;
+    height: 600px;
+}

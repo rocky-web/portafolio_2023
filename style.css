@@ -1,3 +1,31 @@
+.grid-contenedor{
+    display: grid;
+    grid-template-columns: 50px 150px auto;
+    gap: 7px;
+}
+
+.grid-contenedor > div{
+    border: solid 2px;
+}
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+.item2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item4{
+    height: 400px;
+}
+.item5{
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+
+
 .mi_color{
     color: red;
 }
@@ -29,15 +57,3 @@ a:active {
     color: blue;
 }
 
-.div1{
-    display: inline-block;
-    background-color: rgb(253, 134, 134);
-    width: 20%;
-}
-
-.div2{
-    display: inline-block;
-    background-color: burlywood;
-    width: 60%;
-    height: 600px;
-}

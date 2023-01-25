@@ -6,22 +6,23 @@ body{
     display: grid;
     grid-template-columns: 50px 230px auto;
     /* gap: 7px; */
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    /* top: 0; */
     
 
 }
 
 .grid-contenedor > div{
-    /* border: solid 2px green; */
+    border: solid 2px green;
 }
 
 .item1{
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: #333842;
+    position: fixed;
    
    
     
@@ -30,6 +31,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: #282c34;   
+    position: fixed;
     
 }
 
@@ -41,13 +43,15 @@ body{
 }
 .item3{
     background-color: #333842;
-    height: 10vh; /* vh es el equivalente a porcentaje dentro de la pantalla */
+    /* height: 10vh; vh es el equivalente a porcentaje dentro de la pantalla */
+    position: fixed;
    
     
 }
 .item4{
     background-color: #1d2026;
-    /* height: 90vh;  */
+    /* position: fixed; */
+     
 
 }
 

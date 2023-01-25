@@ -6,9 +6,10 @@ body{
     display: grid;
     grid-template-columns: 50px 230px auto;
     /* gap: 7px; */
-    height: 100vh;
+    height: 500px;
     width: 100%;
-    /* position: absolute; */
+    position: fixed;
+    top: 0;
     
 
 }

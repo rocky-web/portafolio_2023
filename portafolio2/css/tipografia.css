@@ -83,3 +83,25 @@ margen izquierdo es 100px
     .color2 a:active {
         color: #f54495;
     }
+
+    .container-profile{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
+    .profile-1{
+        /* width: 100px; */
+        /* height: 100px; */
+        /* background-color: red; */
+    }
+
+    .profile-2{
+        /* width: 100px; */
+        /* height: 100px; */
+        /* background-color: yellow; */
+    }
+
+    .profile-2 img{
+        margin-top: 200px;
+        border-radius: 10px;
+    }

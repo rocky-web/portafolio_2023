@@ -128,6 +128,11 @@ body{
         text-decoration: none;
     }
 
+    .style2{
+        height: 30px;
+        background-color: purple;
+    }
+
     .ss1{
         display: grid;
         grid-template-columns: auto auto;
@@ -181,26 +186,29 @@ body{
         <div class="item1"></div>
         <div class="item2">
             <ul>
-                <li id="clic1"><a href="#" onclick="load1(clic1, 'portafolio.html', 'red', clic2, clic3)">►Portafolio</a>
-                <li id="clic2"><a href="#" onclick="load1(clic2, 'crud.html', 'red', clic1, clic3)">►Sistema de registros de trabajadores (CRUD)</a></li>
-                <li id="clic3"><a href="#" onclick="load1(clic3, 'pagina.html', 'red', clic1, clic2)">►Proyecto en ejecucion</a></li>
+                <li id="clic1"><a href="#" onclick="load1(clic1, 'portafolio.html', 'red', 'ruta jhsgahds', clic2, clic3, perfil, education)">►Portafolio</a>
+                <li id="clic2"><a href="#" onclick="load1(clic2, 'crud.html', 'red', 'ruta 987r987er9e9f', clic1, clic3, perfil, education)">►Sistema de registros de trabajadores (CRUD)</a></li>
+                <li id="clic3"><a href="#" onclick="load1(clic3, 'pagina.html', 'red', 'ruta d6d8figfjg9999', clic1, clic2, perfil, education)">►Proyecto en ejecucion</a></li>
             </ul>
         </div>
         <div class="item3">
 
             <div class="style1">
-                <a href="#" id="perfil" onclick="load1(perfil, 'profile.html', 'blue', education)">
+                <a href="#" id="perfil" onclick="load1(perfil, 'profile.html', 'blue', 'src > portfolio > profile', clic1, clic2, clic3, education)">
                     <div class="ss1">
                         <div class="s1"><img src="img/perfil2.png" alt=""></div>
                         <div class="s2">Profile</div>
                     </div>
                 </a>
-                <a href="#" id="education" onclick="load1(education, 'education.html', 'blue', perfil)">
+                <a href="#" id="education" onclick="load1(education, 'education.html', 'blue', 'ruta jhdaskhkdhkahkdha', clic1, clic2, clic3, perfil)">
                     <div class="ss2">
                         <div class="s3"><img src="img/gorro2.png" alt=""></div>
                         <div class="s4">Education</div>
                     </div>
                 </a>
+            </div>
+            <div class="style2">
+                <div id="show"></div>
             </div>
 
         </div>
@@ -210,17 +218,20 @@ body{
     </div>
 
     <script>
-        function load1(id, pag, color, p3, p4){
+        function load1(id, pag, color, route, p1, p2, p3, p4){
             fetch(pag)
             .then(res=>res.text())
             .then(respuesta=>{
                 document.getElementById("mostrar").innerHTML=respuesta
-                id.style.backgroundColor = color;
-                p3.style.backgroundColor = '';
-                p4.style.backgroundColor = '';
-                perfil.style.backgroundColor = '';
-                education.style.backgroundColor = '';
+                document.getElementById("show").innerHTML=route
+
             })
+            id.style.backgroundColor = color;
+            p1.style.backgroundColor = '';
+            p2.style.backgroundColor = '';
+            p3.style.backgroundColor = '';
+            p4.style.backgroundColor = '';
+            
         }
 
         // function load2(id, pag, color, id2){

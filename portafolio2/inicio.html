@@ -54,7 +54,7 @@ body{
     
 }
 
-    /*  unvisited link */
+/*  unvisited link */
 .item2 a:link {
     color: #E8F3F8;
     text-decoration: none;
@@ -74,7 +74,13 @@ body{
 /* selected link */
 .item2 a:active {
     color: #E8F3F8;
+    /* color: red; */
+    /* background-color: aquamarine; */
 } 
+
+/* .item2 a:focus{
+    color: #00ffffbe;
+} */
 
     .item3{
         position: fixed;
@@ -93,7 +99,7 @@ body{
     /* color pruebas */
     /* background-color: yellowgreen;  */
     margin-left: 280px;
-    margin-top: 70px;
+    margin-top: 70px;  
 }
 
 </style>
@@ -104,9 +110,9 @@ body{
         <div class="item1"></div>
         <div class="item2">
             <ul>
-                <li><a href="#" onclick="load1()">►Portafolio</a>
-                <li><a href="#" onclick="load2()">►Sistema de registros de trabajadores (CRUD)</a></li>
-                <li><a href="#">►Proyecto en ejecucion</a></li>
+                <li id="uno"><a href="#" onclick="load1()">►Portafolio</a>
+                <li id="dos"><a href="#" onclick="load2()">►Sistema de registros de trabajadores (CRUD)</a></li>
+                <li id="tres"><a href="#" onclick="load3()">►Proyecto en ejecucion</a></li>
             </ul>
         </div>
         <div class="item3"></div>
@@ -121,6 +127,7 @@ body{
             .then(res=>res.text())
             .then(respuesta=>{
                 document.getElementById("mostrar").innerHTML=respuesta
+                uno.style.backgroundColor = "red";
             })
         }
 
@@ -129,6 +136,18 @@ body{
             .then(res=>res.text())
             .then(respuesta=>{
                 document.getElementById("mostrar").innerHTML=respuesta
+                dos.style.backgroundColor = "red";
+
+            })
+        }
+
+        function load3(){
+            fetch("crud.html")
+            .then(res=>res.text())
+            .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+                tres.style.backgroundColor = "red";
+
             })
         }
      

@@ -37,11 +37,12 @@ body{
     width: 230px;
     left: 50px;
     top: 0px;
+    border-right: 3px solid;
     
 }
 
 .item2 ul{
-    padding: 0px 0px 0px 10px;
+    padding: 0px;
     list-style-type: none;
 }
 .item2 li{
@@ -88,12 +89,82 @@ body{
         background-color: green; 
         /* color real */
         /* background-color: #333842; */
-        height: 70px;
+        height: auto;
         width: 100%;
         left: 280px;
         top: 0px;
         
     }
+
+    .style1{
+        display: grid;
+        grid-template-columns: 85px 104px ;
+        /* gap: 10px; */
+        /* background-color: yellowgreen; */
+    }
+
+    .style1 img{
+        /* width: 30px; */
+        /* padding: 5px 10px 5px 10px; */
+        height: 20px;
+        /* height: auto; */
+        /* background-color: red; */
+    }
+
+    .style1 a:link{
+        color: white;
+        text-decoration: none;
+    }
+    .style1 a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .style1 a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    .style1 a:active{
+        color: white;
+        text-decoration: none;
+    }
+
+    .ss1{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+
+    .ss2{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .s1{
+        /* display: inline-block; */
+        margin-left: 5px;
+    }
+
+    .s2{
+        /* display: inline-block; */
+        margin-top: 4px;
+        font-family: arial;
+    }
+
+     .s3{
+        /* display: inline-block; */
+        margin-left: 8px;
+    }
+
+    .s4{
+        /* display: inline-block; */
+        margin-top: 4px;
+        font-family: arial;
+
+    }
+
+   
+
+
 
 .item4{
     /* color pruebas */
@@ -111,11 +182,28 @@ body{
         <div class="item2">
             <ul>
                 <li id="clic1"><a href="#" onclick="load1(clic1, 'profile.html', 'red', clic2, clic3)">►Portafolio</a>
-                <li id="clic2"><a href="#" onclick="load1(clic2, 'crud.html', 'green', clic1, clic3)">►Sistema de registros de trabajadores (CRUD)</a></li>
-                <li id="clic3"><a href="#" onclick="load1(clic3, 'pagina.html', 'blue', clic1, clic2)">►Proyecto en ejecucion</a></li>
+                <li id="clic2"><a href="#" onclick="load1(clic2, 'crud.html', 'red', clic1, clic3)">►Sistema de registros de trabajadores (CRUD)</a></li>
+                <li id="clic3"><a href="#" onclick="load1(clic3, 'pagina.html', 'red', clic1, clic2)">►Proyecto en ejecucion</a></li>
             </ul>
         </div>
-        <div class="item3"></div>
+        <div class="item3">
+
+            <div class="style1">
+                <a href="">
+                    <div class="ss1">
+                        <div class="s1"><img src="img/perfil2.png" alt=""></div>
+                        <div class="s2">Profile</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="ss2">
+                        <div class="s3"><img src="img/gorro2.png" alt=""></div>
+                        <div class="s4">Education</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
         <div class="item4">
             <div id="mostrar"></div>
         </div>

@@ -104,15 +104,15 @@ body{
 
 </style>
 </head>
-<body onload="load1()">
+<body onload="load1(clic1, 'profile.html', 'red', clic2, clic3)">
 
     <div class="contenedor">
         <div class="item1"></div>
         <div class="item2">
             <ul>
-                <li id="uno"><a href="#" onclick="load1()">►Portafolio</a>
-                <li id="dos"><a href="#" onclick="load2()">►Sistema de registros de trabajadores (CRUD)</a></li>
-                <li id="tres"><a href="#" onclick="load3()">►Proyecto en ejecucion</a></li>
+                <li id="clic1"><a href="#" onclick="load1(clic1, 'profile.html', 'red', clic2, clic3)">►Portafolio</a>
+                <li id="clic2"><a href="#" onclick="load1(clic2, 'crud.html', 'green', clic1, clic3)">►Sistema de registros de trabajadores (CRUD)</a></li>
+                <li id="clic3"><a href="#" onclick="load1(clic3, 'pagina.html', 'blue', clic1, clic2)">►Proyecto en ejecucion</a></li>
             </ul>
         </div>
         <div class="item3"></div>
@@ -122,34 +122,17 @@ body{
     </div>
 
     <script>
-        function load1(){
-            fetch("profile.html")
+        function load1(id, pag, color, p3, p4){
+            fetch(pag)
             .then(res=>res.text())
             .then(respuesta=>{
                 document.getElementById("mostrar").innerHTML=respuesta
-                uno.style.backgroundColor = "red";
+                id.style.backgroundColor = color;
+                p3.style.backgroundColor = '';
+                p4.style.backgroundColor = '';
             })
         }
 
-        function load2(){
-            fetch("crud.html")
-            .then(res=>res.text())
-            .then(respuesta=>{
-                document.getElementById("mostrar").innerHTML=respuesta
-                dos.style.backgroundColor = "red";
-
-            })
-        }
-
-        function load3(){
-            fetch("crud.html")
-            .then(res=>res.text())
-            .then(respuesta=>{
-                document.getElementById("mostrar").innerHTML=respuesta
-                tres.style.backgroundColor = "red";
-
-            })
-        }
      
     </script>
     

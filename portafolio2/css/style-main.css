@@ -1,0 +1,170 @@
+body{
+    margin: 0 auto;
+    background-color: #1d2026;
+}
+
+    /* .contenedor{      
+    } */
+
+    .item1{
+        position: fixed;
+        /* color pruebas */
+        background-color: red; 
+        /* color real */
+        /* background-color: #333842; */ 
+        height: 100vh;
+        width: 50px;
+        left: 0px;
+        top: 0px; 
+    }
+
+.item2{
+    position: fixed;
+    /* color pruebas */
+    /* background-color: blue;  */
+    /* color real */
+    background-color: #282c34;
+    height: 100vh;
+    width: 230px;
+    left: 50px;
+    top: 0px;
+    border-right: 3px solid;
+    
+}
+
+.item2 ul{
+    padding: 0px;
+    list-style-type: none;
+}
+.item2 li{
+    margin: 10px 0px 10px 0px;
+}
+
+.item2 a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    
+}
+
+/*  unvisited link */
+.item2 a:link {
+    color: #E8F3F8;
+    text-decoration: none;
+}
+
+/* visited link */
+.item2 a:visited {
+    color: #E8F3F8;
+}
+
+/* mouse over link */
+.item2 a:hover {
+    color: #b4e2f7;
+    text-decoration: underline;
+}
+
+/* selected link */
+.item2 a:active {
+    color: #E8F3F8;
+    /* color: red; */
+    /* background-color: aquamarine; */
+} 
+
+/* .item2 a:focus{
+    color: #00ffffbe;
+} */
+
+    .item3{
+        position: fixed;
+        /* color pruebas */
+        background-color: green; 
+        /* color real */
+        /* background-color: #333842; */
+        height: auto;
+        width: 100%;
+        left: 280px;
+        top: 0px;
+        
+    }
+
+    .style1{
+        display: grid;
+        grid-template-columns: 85px 104px ;
+        /* gap: 10px; */
+        /* background-color: yellowgreen; */
+    }
+
+    .style1 img{
+        /* width: 30px; */
+        /* padding: 5px 10px 5px 10px; */
+        height: 20px;
+        /* height: auto; */
+        /* background-color: red; */
+    }
+
+    .style1 a:link{
+        color: white;
+        text-decoration: none;
+    }
+    .style1 a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .style1 a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    .style1 a:active{
+        color: white;
+        text-decoration: none;
+    }
+
+    .style2{
+        height: 30px;
+        background-color: purple;
+    }
+
+    .ss1{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+
+    .ss2{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .s1{
+        /* display: inline-block; */
+        margin-left: 5px;
+    }
+
+    .s2{
+        /* display: inline-block; */
+        margin-top: 4px;
+        font-family: arial;
+    }
+
+     .s3{
+        /* display: inline-block; */
+        margin-left: 8px;
+    }
+
+    .s4{
+        /* display: inline-block; */
+        margin-top: 4px;
+        font-family: arial;
+
+    }
+
+.item4{
+    /* color pruebas */
+    /* background-color: yellowgreen;  */
+    margin-left: 280px;
+    margin-top: 70px;  
+}
+
+#show{
+    color: burlywood;
+}

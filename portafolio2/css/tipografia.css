@@ -51,6 +51,7 @@ margen izquierdo es 100px
 
 .color1{
     font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Consola'; */
     font-size: 18px;
     margin: 30px 0px 30px 45px;
 

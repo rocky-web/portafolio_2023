@@ -9,9 +9,9 @@ body{
     .item1{
         position: fixed;
         /* color pruebas */
-        background-color: red; 
+        /* background-color: red;  */
         /* color real */
-        /* background-color: #333842; */ 
+        background-color: #3c4047; 
         height: 100vh;
         width: 50px;
         left: 0px;
@@ -35,14 +35,20 @@ body{
 .item2 ul{
     padding: 0px;
     list-style-type: none;
+    /* padding-left: 10px; */
 }
 .item2 li{
     margin: 10px 0px 10px 0px;
 }
 
+.span1{
+    font-size: 12px;
+}
+
 .item2 a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: helvetica;
+    font-size: 16.5px;
     
 }
 
@@ -73,13 +79,35 @@ body{
 /* .item2 a:focus{
     color: #00ffffbe;
 } */
+.container2{
+    background-color: #3c4047;
+    padding: 10px 0px 10px 0px;
+}
+
+.text1, .text2{
+       
+    font-family: verdana;
+    color: white;
+   }
+
+   .text1{
+    font-size: 14.3px;
+    margin: 11px 0px 10px 11px;
+    /* display: inline-block; */
+   }
+   .text2{
+    display: inline-block;
+    font-size: 15.5px;
+    background-color: #3c4047;
+    margin-left: 5px;
+   }
 
     .item3{
         position: fixed;
         /* color pruebas */
         background-color: green; 
         /* color real */
-        /* background-color: #333842; */
+        background-color: #3c4047;
         height: auto;
         width: 100%;
         left: 280px;
@@ -94,13 +122,17 @@ body{
         /* background-color: yellowgreen; */
     }
 
-    .style1 img{
-        /* width: 30px; */
-        /* padding: 5px 10px 5px 10px; */
+   .img1{
+        height: 20px;                                                            
+   }
+   .img2{
         height: 20px;
-        /* height: auto; */
-        /* background-color: red; */
-    }
+   }
+.img3{
+    display: inline-block;
+    height: 16px;
+    margin-left: 15px;
+}
 
     .style1 a:link{
         color: white;
@@ -120,19 +152,25 @@ body{
     }
 
     .style2{
-        height: 30px;
-        background-color: purple;
+        /* height: 21px; */
+        background-color: rgb(46, 44, 59);
+        font-family: verdana;
+        font-size: 13px;
+        border-bottom: 3px solid black;
+        padding: 3px 0px 3px 0px;
     }
 
     .ss1{
         display: grid;
         grid-template-columns: auto auto;
+        padding: 6px 0px 6px 0px;
         
     }
 
     .ss2{
         display: grid;
         grid-template-columns: auto auto;
+        padding: 6px 0px 6px 0px;
     }
 
     .s1{
@@ -166,5 +204,6 @@ body{
 }
 
 #show{
-    color: burlywood;
+    color: #E8F3F8;
+    margin-left: 5px;
 }

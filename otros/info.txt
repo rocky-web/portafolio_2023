@@ -1,6 +1,12 @@
 CSS Grid:
 https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines
 
+---------------------------------
+- color de los iconos en photoshop #e3dfdf
+- https://www.flaticon.es/
+- tamaño de descarga 128 kb
+----------------------------
+
 /*  puse el estilo de tipografia aca porque no me toma bien desde inicio.html */
 /*         
     font-family: 'gill sans mt';
@@ -21,3 +27,4 @@ margen inferior es 75px
 margen izquierdo es 100px
 
 */
+

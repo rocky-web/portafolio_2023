@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style-main.css">
 
 </head>
-<body onload="load1(perfil, 'profile.html', '', 'src > portfolio > profile', clic1, clic2, clic3, education)">
+<body onload="load3()">
 
     <div class="contenedor">
         <div class="item1">
@@ -25,22 +25,22 @@
                 <div class="text2">PROJECTS</div>
             </div>
             <ul>
-                <li id="clic1"><a href="#" onclick="load1(clic1, 'portafolio.html', 'background-color: #3c4047;', 'ruta jhsgahds', clic2, clic3, perfil, education)"><span class="span1">►</span>Portafolio</a>
-                <li id="clic2"><a href="#" onclick="load1(clic2, 'crud.html', 'background-color: #3c4047;', 'ruta 987r987er9e9f', clic1, clic3, perfil, education)"><span class="span1">►</span>Sistema de registros de trabajadores (CRUD)</a></li>
-                <li id="clic3"><a href="#" onclick="load1(clic3, 'pagina.html', 'background-color: #3c4047;', 'ruta d6d8figfjg9999', clic1, clic2, perfil, education)"><span class="span1">►</span>Proyecto en ejecucion</a></li>
+                <li id="clic1"><a href="#" id="link1" onclick="load1(parametros = {id1:'clic1',id2:'link1',pag:'jhsjs.html',route:'ruta 1', css_li:'background-color: #3c4047;',css_link:'color: aqua;',p1:'clic2',p2:'link2',p3:'clic3',p4:'link3', p5:'mi_perfil', p6:'education'})"><span class="span1">►</span>Portafolio</a>
+                <li id="clic2"><a href="#" id="link2" onclick="load1(parametros = {id1:'clic2',id2:'link2',pag:'crud.html',route:'ruta 2', css_li:'background-color: #3c4047;',css_link:'color: aqua;',p1:'clic1',p2:'link1',p3:'clic3',p4:'link3', p5:'mi_perfil', p6:'education'})"><span class="span1">►</span>Sistema de registros de trabajadores (CRUD)</a></li>
+                <li id="clic3"><a href="#" id="link3" onclick="load1(parametros = {id1:'clic3',id2:'link3',pag:'proyecto_x.html',route:'ruta 3', css_li:'background-color: #3c4047;',css_link:'color: aqua;',p1:'clic1',p2:'link1',p3:'clic2',p4:'link2', p5:'mi_perfil', p6:'education'})"><span class="span1">►</span>Proyecto en ejecucion</a></li>
             </ul>
         
         </div>
         <div class="item3">
 
             <div class="style1">
-                <a href="#" id="perfil" onclick="load1(perfil, 'profile.html', 'background-color: black; border-bottom: 2px solid white;', 'src > portfolio > profile', clic1, clic2, clic3, education)">
+                <a href="#" id="mi_perfil" onclick="load2(parametros = {idx:'mi_perfil',idy:'education', pag:'profile.html',route:'src > portfolio > profile', css_icon:'background-color: black; border-bottom: 2px solid white;',p1:'clic1',p2:'link1',p3:'clic2',p4:'link2', p5:'clic3', p6:'link3'})">
                     <div class="ss1">
                         <div class="s1"><img src="img/usuario2.png" alt="" class="img1"></div>
                         <div class="s2">Profile</div>
                     </div>
                 </a>
-                <a href="#" id="education" onclick="load1(education, 'education.html', 'background-color: black; border-bottom: 2px solid white;', 'ruta jhdaskhkdhkahkdha', clic1, clic2, clic3, perfil)">
+                <a href="#" id="education" onclick="load2(parametros = {idx:'education',idy:'mi_perfil', pag:'education.html',route:'src > portfolio > education', css_icon:'background-color: black; border-bottom: 2px solid white;',p1:'clic1',p2:'link1',p3:'clic2',p4:'link2', p5:'clic3', p6:'link3'})">
                     <div class="ss2">
                         <div class="s3"><img src="img/graduacion2.png" alt="" class="img2"></div>
                         <div class="s4">Education</div>
@@ -58,20 +58,59 @@
     </div>
 
     <script>
-        function load1(id, pag, css, route, p1, p2, p3, p4){
-            fetch(pag)
-            .then(res=>res.text())
-            .then(respuesta=>{
+        function load1(par){
+            fetch(par.pag)
+             .then(res=>res.text())
+                .then(respuesta=>{
                 document.getElementById("mostrar").innerHTML=respuesta
-                document.getElementById("show").innerHTML=route
+                document.getElementById("show").innerHTML=par.route
 
             })
-            id.style.cssText = css;
-            p1.style.cssText = "";
-            p2.style.cssText = "";
-            p3.style.cssText = "";
-            p4.style.cssText = "";
+
+            document.getElementById(par.id1).style.cssText = par.css_li
+            document.getElementById(par.id2).style.cssText = par.css_link
             
+            document.getElementById(par.p1).style.cssText = ""
+            document.getElementById(par.p2).style.cssText = ""
+            document.getElementById(par.p3).style.cssText = ""
+            document.getElementById(par.p4).style.cssText = ""
+            document.getElementById(par.p5).style.cssText = ""
+            document.getElementById(par.p6).style.cssText = ""
+
+            // id.style.cssText = css;
+            // p1.style.cssText = "";
+            // p2.style.cssText = "";
+            // p3.style.cssText = "";
+            // p4.style.cssText = "";
+
+        }
+
+        function load2(par){
+            fetch(par.pag)
+             .then(res=>res.text())
+                .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+                document.getElementById("show").innerHTML=par.route
+
+            })
+            document.getElementById(par.idx).style.cssText = par.css_icon
+            document.getElementById(par.idy).style.cssText = ""
+            document.getElementById(par.p1).style.cssText = ""
+            document.getElementById(par.p2).style.cssText = ""
+            document.getElementById(par.p3).style.cssText = ""
+            document.getElementById(par.p4).style.cssText = ""
+            document.getElementById(par.p5).style.cssText = ""
+            document.getElementById(par.p6).style.cssText = ""
+        }
+
+        function load3(){
+            fetch('profile.html')
+             .then(res=>res.text())
+                .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+                document.getElementById("show").innerHTML='src > portfolio > profile'
+
+            })
         }
      
     </script>

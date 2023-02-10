@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #link_id{
+            color: brown;
+            font-size: 20px;
+        }
+
+        .class_id{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .estilo{
+            color: blueviolet;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="link_id" onclick="ggg()">mi link</a>
+
+    <button onclick="hhh()">remove class</button>
+
+    <div id="div_id" class="class_id"></div>
+
+    <script>
+        function ggg(){
+            document.getElementById("div_id").classList.add("estilo");
+            // div_id.classList.add('aplicar_clase1');
+        }
+
+        function hhh(){
+            document.getElementById("div_id").classList.remove("estilo");
+            // div_id.classList.add('aplicar_clase1');
+        }
+
+    </script>
+</body>
+</html>

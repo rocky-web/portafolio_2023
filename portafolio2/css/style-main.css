@@ -70,13 +70,13 @@ body{
 
 /*  unvisited link */
 .item2 a:link {
-    color: #E8F3F8;
+    color: #a3aeb3;
     text-decoration: none;
 }
 
 /* visited link */
 .item2 a:visited {
-    color: #E8F3F8;
+    color: #a3aeb3;
 }
 
 /* mouse over link */
@@ -87,7 +87,7 @@ body{
 
 /* selected link */
 .item2 a:active {
-    color: #E8F3F8;
+    color: #a3aeb3;
     /* background-color: aquamarine; */
 } 
 

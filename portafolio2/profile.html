@@ -79,22 +79,8 @@
     }
 
 .profile-1{
-    /* width: 100px; */
-    /* height: 100px; */
-    /* background-color: aqua; */
     grid-column-start:1 ;
     grid-column-end: 3;
-}
-
-    .profile-2{
-        /* width: 100px; */
-        /* height: 100px; */
-        /* background-color: yellow; */
-    }
-
-.profile-3{
-    /* background-color: red; */
-
 }
 
     .profile-3 img{
@@ -102,6 +88,36 @@
         border-radius: 10px;
         width: 210px;
     }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container-profile{
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+
+    .profile-1{
+        grid-column-start: unset ;
+        grid-column-end: unset;
+    }
+
+
+    .profile-3{
+        display: grid;
+        grid-area: 2/1;
+        justify-content: center;
+        
+
+    }
+
+    .profile-3 img{
+        margin-top: 30px;
+        border-radius: 10px;
+        width: 210px;  
+    }
+}
+
 
     </style>
 </head>

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style-main.css">
 
 </head>
-<body onload="load2()">
+<!-- <body onload="load2()"> -->
+<body>
 
     <div class="contenedor">
         <div class="item1">
@@ -25,22 +26,22 @@
                 <div class="text2">PROJECTS</div>
             </div>
             <ul>
-                <li id="id_li1"><a href="#" id="id_link1" onclick="load1(obj = {id:1, id1:'id_li1',id2:'id_link1',pag:'jhsjs.html',route:'ruta 1', css_1:'background-color: #3c4047;',css_2:'color: #d9d9d9;', id_all:'#id_li2, #id_li3, #id_link2, #id_link3, #mi_perfil, #education'})"><span class="span1">►</span>Portafolio</a>
-                <li id="id_li2"><a href="#" id="id_link2" onclick="load1(obj = {id:1, id1:'id_li2',id2:'id_link2',pag:'crud.html',route:'ruta 2', css_1:'background-color: #3c4047;',css_2:'color: #d9d9d9;', id_all:'#id_li1, #id_li3, #id_link1, #id_link3, #mi_perfil, #education'})"><span class="span1">►</span>Sistema de registros de trabajadores (CRUD)</a></li>
-                <li id="id_li3"><a href="#" id="id_link3" onclick="load1(obj = {id:1, id1:'id_li3',id2:'id_link3',pag:'proyecto_x.html',route:'ruta 3', css_1:'background-color: #3c4047;',css_2:'color: #d9d9d9;', id_all:'#id_li1, #id_li2, #id_link1, #id_link2, #mi_perfil, #education'})"><span class="span1">►</span>Proyecto en ejecucion</a></li>
+                <li id="id_li1" class="remove"><a href="#" id="id_link1" class="remove" onclick="load1(obj = {id:1, id1:'id_li1',id2:'id_link1',pag:'jhsjs.html',route:'ruta 1', css_r:'.remove',css_li:'class_li1', css_link:'class_link1'})"><span class="span1">►</span>Portafolio</a>
+                <li id="id_li2" class="remove"><a href="#" id="id_link2" class="remove" onclick="load1(obj = {id:1, id1:'id_li2',id2:'id_link2',pag:'crud.html',route:'ruta 2', css_r:'.remove',css_li:'class_li1', css_link:'class_link1'})"><span class="span1">►</span>Sistema de registros de trabajadores (CRUD)</a></li>
+                <li id="id_li3" class="remove"><a href="#" id="id_link3" class="remove" onclick="load1(obj = {id:1, id1:'id_li3',id2:'id_link3',pag:'proyecto_x.html',route:'ruta 3', css_r:'.remove',css_li:'class_li1', css_link:'class_link1'})"><span class="span1">►</span>Proyecto en ejecucion</a></li>
             </ul>
         
         </div>
         <div class="item3">
 
             <div class="style1">
-                <a href="#" id="mi_perfil" onclick="load1(obj = {id:2, id1:'mi_perfil', pag:'profile.html',route:'src > portfolio > profile', css_1:'background-color: black; border-bottom: 2px solid white;', id_all:'#id_li1, #id_li2, #id_li3, #id_link1, #id_link2, #id_link3, #education'})">
+                <a href="#" id="mi_perfil" class="remove" onclick="load1(obj = {id:2, id1:'mi_perfil', pag:'profile.html',route:'src > portfolio > profile', css_r:'.remove', css_bu:'class_button1'})">
                     <div class="est1">
                         <div class="s1"><img src="img/usuario2.png" alt="" class="img1"></div>
                         <div class="est2">Profile</div>
                     </div>
                 </a>
-                <a href="#" id="education" onclick="load1(obj = {id:2, id1:'education', pag:'education.html',route:'src > portfolio > education', css_1:'background-color: black; border-bottom: 2px solid white;', id_all:'#id_li1, #id_li2, #id_li3, #id_link1, #id_link2, #id_link3, #mi_perfil'})">
+                <a href="#" id="education" class="remove" onclick="load1(obj = {id:2, id1:'education', pag:'education.html',route:'src > portfolio > education', css_r:'.remove', css_bu:'class_button1'})">
                     <div class="est1">
                         <div class="s2"><img src="img/graduacion2.png" alt="" class="img1"></div>
                         <div class="est2">Education</div>
@@ -63,8 +64,6 @@
         </div>
     </div>
 
-    
-
     <script>
 
         function load1(p){
@@ -76,32 +75,15 @@
 
             })
 
-            if(p.id == 1){
-                document.getElementById(p.id1).style.cssText = p.css_1;
-                document.getElementById(p.id2).style.cssText = p.css_2;
-                var node = document.querySelectorAll(p.id_all); 
-                for(var x = 0; x < node.length; x++){
-                    node[x].style.cssText = ''
-                }
-            }else if(p.id == 2){
-                document.getElementById(p.id1).style.cssText = p.css_1;
-                var node = document.querySelectorAll(p.id_all); 
-                for(var x = 0; x < node.length; x++){
-                    node[x].style.cssText = ''
-                }
+            var node = document.querySelectorAll(p.css_r); 
+            for(var x = 0; x < node.length; x++){
+                node[x].classList.remove('class_button1', 'class_li1', 'class_link1')
             }
+            document.getElementById(p.id1).classList.add(p.css_li)
+            document.getElementById(p.id1).classList.add(p.css_link)
+            document.getElementById(p.id1).classList.add(p.css_bu)
 
-        }
-
-        function load2(){
-            fetch('profile.html')
-             .then(res=>res.text())
-                .then(respuesta=>{
-                document.getElementById("mostrar").innerHTML=respuesta
-                document.getElementById("show").innerHTML='src > portfolio > profile'
-
-            })
-        }
+        } 
      
     </script>
     

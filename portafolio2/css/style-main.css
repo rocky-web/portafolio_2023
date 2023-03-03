@@ -78,14 +78,13 @@ body{
 
 /* mouse over link */
 .item2 a:hover {
-    color: #b4e2f7;
-    text-decoration: underline;
+    color: #ddeef7;
+    /* text-decoration: underline; */
 }
 
 /* selected link */
 .item2 a:active {
     color: #a3aeb3;
-    /* background-color: aquamarine; */
 } 
 
 /* .item2 a:focus{
@@ -220,6 +219,20 @@ body{
     color: #E8F3F8;
     margin-left: 5px;
 }
+
+.class_button1{
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+.class_li1{
+    background-color: #3c4047;
+}
+.class_link1{
+    color: #ec0a0a;
+    /* background-color: yellow; */
+}
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

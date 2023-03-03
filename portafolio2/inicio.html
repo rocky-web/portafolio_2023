@@ -67,25 +67,25 @@
 
     <script>
 
-        function load1(par){
-            fetch(par.pag)
+        function load1(p){
+            fetch(p.pag)
              .then(res=>res.text())
                 .then(respuesta=>{
                 document.getElementById("mostrar").innerHTML=respuesta
-                document.getElementById("show").innerHTML=par.route
+                document.getElementById("show").innerHTML=p.route
 
             })
 
-            if(par.id == 1){
-                document.getElementById(par.id1).style.cssText = par.css_1;
-                document.getElementById(par.id2).style.cssText = par.css_2;
-                var node = document.querySelectorAll(par.id_all); 
+            if(p.id == 1){
+                document.getElementById(p.id1).style.cssText = p.css_1;
+                document.getElementById(p.id2).style.cssText = p.css_2;
+                var node = document.querySelectorAll(p.id_all); 
                 for(var x = 0; x < node.length; x++){
                     node[x].style.cssText = ''
                 }
-            }else if(par.id == 2){
-                document.getElementById(par.id1).style.cssText = par.css_1;
-                var node = document.querySelectorAll(par.id_all); 
+            }else if(p.id == 2){
+                document.getElementById(p.id1).style.cssText = p.css_1;
+                var node = document.querySelectorAll(p.id_all); 
                 for(var x = 0; x < node.length; x++){
                     node[x].style.cssText = ''
                 }

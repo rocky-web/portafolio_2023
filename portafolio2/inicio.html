@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style-main.css">
 
 </head>
-<!-- <body onload="load2()"> -->
-<body>
+<body onload="load2()">
+<!-- <body> -->
 
     <div class="contenedor">
         <div class="item1">
@@ -84,6 +84,15 @@
             document.getElementById(p.id1).classList.add(p.css_bu)
 
         } 
+
+        function load2(){
+            fetch("profile.html")
+             .then(res=>res.text())
+                .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+
+            })
+        }
      
     </script>
     

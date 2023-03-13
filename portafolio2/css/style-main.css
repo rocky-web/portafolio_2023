@@ -3,6 +3,11 @@ body{
     background-color: #1d2026;
 }
 
+.contenedor{
+    box-sizing: border-box;
+
+}
+
     .item1{
         position: fixed;
         /* color pruebas */
@@ -235,7 +240,7 @@ body{
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .item1, .item2{
         display: none;
     }

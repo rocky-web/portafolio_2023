@@ -74,17 +74,21 @@
         </div>
     </div>
 
-    <div id="modal1" class="">
-       <a href="#" class="link-modal">link fhfhfhfh</a>
-       <hr>
+    <div id="modal1" class="modal_origin1">
+        <div><img src="img/close.png" alt="" id="img_close"></div>
        <a href="#">link fhfhfhfh</a>
        <hr>
        <a href="#">link fhfhfhfh</a>
        <hr>
        <a href="#">link fhfhfhfh</a>
        <hr>
+       <a href="#">link fhfhfhfh</a>
+       <hr>
+       
     </div>
-    <div id="modal2" class=""></div>
+    <div id="modal2" class="modal_origin2">
+       
+    </div>
 
     <script>
 
@@ -120,6 +124,17 @@
             document.getElementById('modal').classList.toggle('modal_toggle2')
             document.getElementById('modal1').classList.toggle('modal-no-transparent-toggle')
             document.getElementById('modal2').classList.toggle('modal-transparent-toggle')
+        }
+
+        window.onclick = function(e) {
+            if (e.target == modal2 || e.target == img_close ) {
+                // modal1.style.display = "none";
+                // modal2.style.display = "none";
+                // document.getElementById('modal').classList.remove('modal_toggle2')
+                document.getElementById('modal').classList.toggle('modal_toggle2')
+            document.getElementById('modal1').classList.toggle('modal-no-transparent-toggle')
+            document.getElementById('modal2').classList.toggle('modal-transparent-toggle')
+            }
         }
 
      

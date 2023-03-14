@@ -244,6 +244,13 @@ body{
     /* background-color: yellow; */
 }
 
+.modal_origin1{
+    display: none;
+}
+.modal_origin2{
+display: none;
+}
+
 .modal-transparent-toggle{
     display: block;
     z-index: 1;
@@ -320,6 +327,33 @@ body{
     height: 20px;
     /* display: none; */
     /* background-color: red; */
+}
+
+#modal1{
+    /* background-color: green; */
+    padding-top: 0;
+    padding-left: 10px;
+    
+}
+
+#modal1 div:nth-child(1){
+    display: grid;
+    /* background-color: aqua; */
+    justify-content: end;
+    /* float: right; */
+}
+
+#modal1 img{
+    padding-right: 7px;
+    padding-top: 7px;
+    /* padding-right: 100px; */
+    /* margin: 0 auto; */
+    display: block;
+    /* float: right; */
+    
+    width: 30px;
+    height: 30px;
+    /* background-color: #ec0a0a; */
 }
 
 

@@ -244,7 +244,8 @@ body{
     /* background-color: yellow; */
 }
 
-.modal-transparent{
+.modal-transparent-toggle{
+    display: block;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -252,35 +253,31 @@ body{
     background-color: rgba(99, 102, 99, 0.5);
     height: 100vh;
     width: 100%;
-    display: none;
 }
 
-.modal-no-transparent{
+.modal-no-transparent-toggle{
+    display: block;
     z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgb(80, 28, 223); */
     height: 100vh;
     width: 70%;
     color: white;
     padding-top: 30px;
-    display: none;
-    /* background-color: blue; */
-
 }
 
-.modal-no-transparent a{
-    display: block;
+.modal-no-transparent-toggle a{
+    color: aqua;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: white;
-    padding-left: 30px;
 }
+
 
 #menu2{
-    display: grid;
+    display: none;
     grid-template-columns: auto;
     justify-content: end;
 }
@@ -291,11 +288,6 @@ body{
     align-content: center;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    /* justify-content: end; */
-    /* background-color: rgb(52, 207, 228); */
-    /* justify-self: start; */
-    /* cursor: pointer; */
-    /* width: fit-content; */
     
 }
 
@@ -316,6 +308,7 @@ body{
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
+    /* display: none; */
     /* background-color: red; */
 }
 
@@ -325,6 +318,7 @@ body{
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
+    /* display: none; */
     /* background-color: red; */
 }
 
@@ -347,8 +341,12 @@ body{
         /* background-color: green; */
     }
 
-  
+    #menu2{
+        display: grid;
+    }
 
+
+   
     
 }
 

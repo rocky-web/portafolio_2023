@@ -47,14 +47,14 @@
                         <div class="est2">Education</div>
                     </div>
                 </a>
-                <div id="menu2">
-                    <a href="#" onclick="f_modal()">
-                        <div>
-                            <div id="modal" class="modal_toggle1"></div>
-                        </div>
-                        <div>Menu</div>
-                    </a>
-                </div>
+                    <div id="menu2">
+                        <a href="#" onclick="f_modal()">
+                            <div>
+                                <div id="modal" class="modal_toggle1"></div>
+                            </div>
+                            <div>Menu</div>
+                        </a>
+                    </div>
 
                 <!-- <a href="#" id="menu">
                     <div class="est1">
@@ -74,8 +74,8 @@
         </div>
     </div>
 
-    <div class="modal-no-transparent">
-       <a href="#">link fhfhfhfh</a>
+    <div id="modal1" class="">
+       <a href="#" class="link-modal">link fhfhfhfh</a>
        <hr>
        <a href="#">link fhfhfhfh</a>
        <hr>
@@ -84,7 +84,7 @@
        <a href="#">link fhfhfhfh</a>
        <hr>
     </div>
-    <div class="modal-transparent"></div>
+    <div id="modal2" class=""></div>
 
     <script>
 
@@ -118,7 +118,10 @@
 
         function f_modal(){
             document.getElementById('modal').classList.toggle('modal_toggle2')
+            document.getElementById('modal1').classList.toggle('modal-no-transparent-toggle')
+            document.getElementById('modal2').classList.toggle('modal-transparent-toggle')
         }
+
      
     </script>
     

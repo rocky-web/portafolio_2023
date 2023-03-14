@@ -48,8 +48,10 @@
                     </div>
                 </a>
                 <div id="menu2">
-                    <a href="#">
-                        <div><img src="img/menu.png" alt="" ></div>
+                    <a href="#" onclick="f_modal()">
+                        <div>
+                            <div id="modal" class="modal_toggle1"></div>
+                        </div>
                         <div>Menu</div>
                     </a>
                 </div>
@@ -112,6 +114,10 @@
                 document.getElementById("mostrar").innerHTML=respuesta
 
             })
+        }
+
+        function f_modal(){
+            document.getElementById('modal').classList.toggle('modal_toggle2')
         }
      
     </script>

@@ -363,13 +363,11 @@ display: none;
     /* background-color: #ec0a0a; */
 }
 
-.span1{
-    color: violet;
-    font-size: 20px;
-    text-decoration: none;
+#modal1 p{
+    color: #f54495;
+    font-family: monospace;
+    font-size: 18px;
 }
-
-
 @media only screen and (max-width: 800px) {
     .item1, .item2{
         display: none;

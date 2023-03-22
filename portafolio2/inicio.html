@@ -77,15 +77,15 @@
         <div><img src="img/close.png" alt="" id="img_close"></div>
         <h1>Proyects</h1>
         <hr>
-        <a href="#" target="_blank">Portafolio</a>
+        <a href="#" onclick="load_modal(obj={pag:'pag_portafolio.html', route:'src > portfolio > portafolio'})">Portafolio</a>
         <hr>
-        <a href="#" target="_blank">Registro de personas - CRUD</a>
+        <a href="#" onclick="load_modal(obj={pag:'crud.html', route:'src > portfolio > crud'})">Registro de personas - CRUD</a>
         <hr>
         <h1>Contact</h1>
         <hr>
-        <a href="mailto:feberroeta@gmail.com" target="_blank">Email</a>
+        <a href="mailto:feberroeta@gmail.com" target="_blank">Email:<span class="span1"> feberroeta@gmail.com</span></a>
         <hr>
-        <a href="https://github.com/rocky-web" target="_blank">Github</a>
+        <a href="https://github.com/rocky-web" target="_blank">Github:<span class="span1"> https://github.com/rocky-web</span></a>
         <hr>
         <a href="docs/CV_Felipe Berroeta.pdf" target="_blank">Currículum</a>
         <hr>
@@ -128,6 +128,16 @@
             document.getElementById('modal').classList.toggle('modal_toggle2')
             document.getElementById('modal1').classList.toggle('modal-no-transparent-toggle')
             document.getElementById('modal2').classList.toggle('modal-transparent-toggle')
+        }
+
+        function load_modal(p){
+            fetch(p.pag)
+             .then(res=>res.text())
+                .then(respuesta=>{
+                document.getElementById("mostrar").innerHTML=respuesta
+                document.getElementById("show").innerHTML=p.route
+
+            })
         }
 
         window.onclick = function(e) {

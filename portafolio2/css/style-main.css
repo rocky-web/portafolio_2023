@@ -390,6 +390,10 @@ display: none;
         display: grid;
     }
 
+    #modal1 hr{
+        width: 90%;
+    }
+
 
    
     

@@ -394,6 +394,10 @@ display: none;
         width: 90%;
     }
 
+    #modal1{
+        overflow-y: scroll;
+    }
+
 
    
     
